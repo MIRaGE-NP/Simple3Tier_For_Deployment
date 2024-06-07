@@ -11,7 +11,8 @@ RUN pip3 install -r requirements.txt && \
     pip3 install jinja2 && \
     pip3 install --upgrade flask jinja2 && \
     pip3 install install urllib3 six && \
-    pip install --upgrade requests urllib3 six
+    pip install --upgrade requests urllib3 six && \
+    pip install --upgrade flask
 ADD . /code/
 CMD ["python3", "backend.py" ]
 
