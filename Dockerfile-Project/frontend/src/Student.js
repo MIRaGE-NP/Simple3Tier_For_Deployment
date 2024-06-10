@@ -15,7 +15,7 @@ function Student() {
 
   console.log("API",API_BASE_URL)
 const getData=()=> {
-  fetch(`${API_BASE_URL}/student`)
+  fetch('http://10.0.1.240/student')
   .then((res) => res.json())
   .then((data) => {
     console.log('Fetched Data:', data);
@@ -46,7 +46,7 @@ const getData=()=> {
       body: JSON.stringify( studentData )
   };
     
-    fetch(`${API_BASE_URL}/addstudent`, requestOptions ).then((res) => res.json())
+    fetch(`http://10.0.1.240/addstudent`, requestOptions ).then((res) => res.json())
 .then(() => {
 getData()})
       .catch((err) => console.log(err));

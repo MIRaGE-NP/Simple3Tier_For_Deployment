@@ -15,7 +15,7 @@ function Teacher() {
   const API_BASE_URL = 'http://10.0.1.240';
 
   const getData=()=> {
-    fetch(`${API_BASE_URL}/teacher`)
+    fetch(`http://10.0.1.240/teacher`)
     .then((res) => res.json())
     .then((data) => setData(data))
     .catch((err) => console.log(err));
@@ -45,7 +45,7 @@ function Teacher() {
     body: JSON.stringify( TeacherData )
 };
   
-  fetch(`${API_BASE_URL}/addteacher`, requestOptions ).then((res) => res.json())
+  fetch(`http://10.0.1.240/addteacher`, requestOptions ).then((res) => res.json())
 .then(() => {
     getData()}
 )
