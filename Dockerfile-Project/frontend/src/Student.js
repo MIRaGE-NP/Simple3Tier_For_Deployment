@@ -11,11 +11,11 @@ function Student() {
   });
   const [data, setData]= useState([])
 
-  const API_BASE_URL = 'http://10.0.1.240';
+  const API_BASE_URL = 'http://18.141.89.179';
 
   console.log("API",API_BASE_URL)
 const getData=()=> {
-  fetch('http://10.0.1.240/student')
+  fetch(`${API_BASE_URL}/student`)
   .then((res) => res.json())
   .then((data) => {
     console.log('Fetched Data:', data);
@@ -46,7 +46,7 @@ const getData=()=> {
       body: JSON.stringify( studentData )
   };
     
-    fetch(`http://10.0.1.240/addstudent`, requestOptions ).then((res) => res.json())
+    fetch(`${API_BASE_URL}/addstudent`, requestOptions ).then((res) => res.json())
 .then(() => {
 getData()})
       .catch((err) => console.log(err));
