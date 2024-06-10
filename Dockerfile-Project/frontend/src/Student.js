@@ -11,7 +11,7 @@ function Student() {
   });
   const [data, setData]= useState([])
 
-  const API_BASE_URL = 'http://18.141.89.179';
+  const API_BASE_URL = 'http://13.250.13.188:3500';
 
   console.log("API",API_BASE_URL)
 const getData=()=> {
