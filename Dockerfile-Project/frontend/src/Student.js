@@ -11,7 +11,7 @@ function Student() {
   });
   const [data, setData]= useState([])
 
-  const API_BASE_URL = process.env.REACT_APP_API_BASE_URL;
+  const API_BASE_URL = '10.0.1.240';
 
   console.log("API",API_BASE_URL)
 const getData=()=> {
