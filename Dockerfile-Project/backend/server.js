@@ -11,7 +11,7 @@ app.use(express.json());
 app.use(cors());
 
 const db = createPool({
-    host: "10.0.3.12",
+    host: "10.240.19.7",
     user: "root",
     password: "mysql123",
     database: "school",
