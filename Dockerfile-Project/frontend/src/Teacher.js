@@ -12,7 +12,7 @@ function Teacher() {
 
   const [data, setData]= useState([])
 
-  const API_BASE_URL = 'http://10.240.18.232:81';
+  const API_BASE_URL = 'http://test-alb-370651054.ap-southeast-1.elb.amazonaws.com:81';
 
   const getData=()=> {
     fetch(`${API_BASE_URL}/teacher`)
