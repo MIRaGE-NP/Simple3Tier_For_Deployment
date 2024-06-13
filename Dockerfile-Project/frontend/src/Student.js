@@ -11,7 +11,7 @@ function Student() {
   });
   const [data, setData]= useState([])
 
-  const API_BASE_URL = 'http://test-alb-370651054.ap-southeast-1.elb.amazonaws.com:81';
+  const API_BASE_URL = 'http://test-alb-370651054.ap-southeast-1.elb.amazonaws.com';
 
   console.log("API",API_BASE_URL)
 const getData=()=> {
